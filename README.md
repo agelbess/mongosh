@@ -1,8 +1,9 @@
 # Mongosh runner
 
-## Start the shell
+## Build
 
-    podman run -it --rm --network host mongosh "mongodb://localhost:27017/test"
+    podman build -t mongosh .
 
-## Run a script
-"# mongosh" 
+## Run
+
+    podman run -it --rm --network host mongosh
